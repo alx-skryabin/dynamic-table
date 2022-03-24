@@ -1,6 +1,6 @@
 # Dynamic-table React App
 
-Link for demo: [dynamic-table-react.web.app/](https://dynamic-table-react.web.app/)
+Link for demo: [dynamic-table-react.web.app](https://dynamic-table-react.web.app)
 
 ## Available Scripts
 
