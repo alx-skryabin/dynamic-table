@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Ivan",
+    "surname": "Ivanov",
+    "age": 37,
+    "extension": 3457,
+    "mobile": "+79992394865"
+  },
+  {
+    "name": "Petr",
+    "surname": "Ivanov",
+    "age": 55,
+    "extension": 2759,
+    "mobile": "+79778965463"
+  },
+  {
+    "name": "Petr",
+    "surname": "Petrov",
+    "age": 21,
+    "extension": 3234,
+    "mobile": "+79666547384"
+  },
+  {
+    "name": "Sidor",
+    "surname": "Sidorov",
+    "age": 55,
+    "extension": 2465,
+    "mobile": "+79778965463"
+  }
+]
