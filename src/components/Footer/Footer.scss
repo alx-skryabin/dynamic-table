@@ -1,0 +1,36 @@
+.dt__footer {
+  margin: 40px 20px 20px;
+
+  .dt__footer-item {
+    color: #eee;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: .9rem;
+
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      text-decoration: none;
+      color: cornflowerblue;
+      font-size: 1.1rem;
+      transition: .2s;
+
+      &:hover {
+        color: deepskyblue;
+        transition: .2s;
+      }
+    }
+  }
+
+  .dt__footer-badge {
+    margin-bottom: 20px;
+
+    .badge {
+      margin: 5px;
+      font-size: 12px;
+      background-color: rgba(255, 255, 255, .2) !important;
+      color: #ddd;
+      cursor: default;
+    }
+  }
+}
