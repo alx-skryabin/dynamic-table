@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Button from './components/Button/Button'
+import Header from './components/Header/Header'
 import Table from './components/Table/Table'
 import Footer from './components/Footer/Footer'
 import {Context, initialState} from './context'
@@ -18,6 +18,11 @@ function App() {
             .catch(() => {
                 setState({...state, isLoading: false})
             })
+    }
+
+    const addData = (item: any): void => {
+        const data: any = [...state.data, item]
+        setState({...state, data})
     }
 
     const changeSort = (sortColumn: string, sortType: string): void => {
@@ -39,7 +44,7 @@ function App() {
     return (
         <Context.Provider value={state}>
             <div className="dt__app">
-                <Button loadData={loadData}/>
+                <Header loadData={loadData} addData={addData}/>
                 <Table changeSort={changeSort} changeFilter={changeFilter}/>
                 <Footer/>
             </div>

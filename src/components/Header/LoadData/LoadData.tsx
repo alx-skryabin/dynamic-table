@@ -1,17 +1,16 @@
 import React, {useContext} from 'react'
-import {Button as ButtonBT} from 'react-bootstrap'
-import {Context} from '../../context'
-import './Button.scss'
+import {Button} from 'react-bootstrap'
+import {Context} from '../../../context'
 
-export default function Button({loadData}: any) {
+export default function LoadData({loadData}: any) {
     const {data, isLoading} = useContext(Context)
     const title = !!data.length
         ? <><i className="fas fa-check"/> Data uploaded</>
         : <><i className="fas fa-download"/> Click to load</>
 
     return (
-        <ButtonBT
-            className="dt__button-load"
+        <Button
+            className="dt__buttons dt__btn-load"
             variant="outline-light"
             disabled={!!data.length || isLoading}
             onClick={loadData}
@@ -21,6 +20,6 @@ export default function Button({loadData}: any) {
                     ? <i className="fas fa-spinner fa-spin"/>
                     : title
             }
-        </ButtonBT>
+        </Button>
     )
 }

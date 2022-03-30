@@ -1,0 +1,36 @@
+.dt__header {
+  margin: 20px 20px 0;
+}
+
+.dt__buttons {
+  text-align: center;
+  box-shadow: none !important;
+
+  &.dt__btn-load {
+    width: 160px;
+    margin-right: 10px;
+  }
+}
+
+.dt__form-add {
+  button {
+    width: 100%;
+    box-shadow: none !important;
+  }
+
+  input {
+    margin-bottom: 10px;
+
+    &.valid-success {
+      border-color: limegreen;
+    }
+
+    &.valid-error {
+      border-color: tomato;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
