@@ -13,3 +13,9 @@ body {
   scrollbar-width: thin;
   outline: none !important;
 }
+
+.dt__app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
